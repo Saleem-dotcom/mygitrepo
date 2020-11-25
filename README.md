@@ -1,0 +1,2 @@
+# mygitrepo
+creating first repository
