@@ -1,0 +1,12 @@
+---
+
+- name: creating directories
+  hosts: all
+  become: true
+  tasks: 
+  - name: create multiple dir
+    file: path= {{item}} state=directory
+    with_items:
+    - '/home/admin/saleem1'
+    - '/home/admin/najaf2'
+    - '/home/admin/samar3'
