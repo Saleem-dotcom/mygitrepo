@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: true
+  tasks:
+  - name: create a file
+    file: path=/home/admin/tahir.txt state=touch
+    file: path=/home/admin/samar.txt state=touch
+    file: path=/home/admin/saleem.txt state=touch
+       
+  
